@@ -29,7 +29,7 @@ const server = http.createServer(async (req, res) => {
       res.writeHead(200, { "Content-Type": "application/json" });
       res.end(data);
 
-    } catch (error) {
+    } catch (error) { 
       res.writeHead(500, { "Content-Type": "application/json" });
       console.error("Error al ejecutar el scraping:", error);
       res.end(JSON.stringify({ error: "Error al ejecutar el scraping" }));
